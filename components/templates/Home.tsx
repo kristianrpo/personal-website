@@ -11,42 +11,41 @@ type Tag = React.ComponentProps<typeof Tag>;
 export default async function Home() {
   const t = await getTranslations("HomePage");
 
-  const heroSection = data.homePage.hero;
+  const hero = data.homePage.hero;
 
-  const profileSection = data.homePage.profile;
+  const profile = data.homePage.profile;
 
-  const skillSection = data.homePage.skills;
-  const skillsItems = data.homePage.skills.items as Tag[];
-  const skillList = skillsItems.map((skillItem) => ({
-    label: t(skillItem.label),
-    variant: skillItem.variant,
-  }));
+  const skills = data.homePage.skills;
+  const skillList = skills.items.map((item) => ({
+    label: t(item.label),
+    variant: item.variant,
+  })) as Tag[];
 
   return (
     <div className="">
       <section id="hero" className="my-10">
         <Hero
-          title={t(heroSection.title)}
-          description={t(heroSection.subtitle)}
-          urlButton1={heroSection.downloadCVUrl}
-          labelButton1={t(heroSection.downloadCV)}
-          urlButton2={heroSection.contactMeUrl}
-          labelButton2={t(heroSection.contactMe)}
-          imageSrc={heroSection.imageSrc}
-          imageAlt={t(heroSection.imageAlt)}
+          title={t(hero.title)}
+          description={t(hero.subtitle)}
+          urlButton1={hero.downloadCVUrl}
+          labelButton1={t(hero.downloadCV)}
+          urlButton2={hero.contactMeUrl}
+          labelButton2={t(hero.contactMe)}
+          imageSrc={hero.imageSrc}
+          imageAlt={t(hero.imageAlt)}
         />
       </section>
 
       <section id="profile" className="my-10">
         <Heading variant="h3" className="my-5">
-          {t(profileSection.title)}
+          {t(profile.title)}
         </Heading>
-        <Description>{t(profileSection.description)}</Description>
+        <Description>{t(profile.description)}</Description>
       </section>
 
       <section id="skills" className="my-10">
         <Heading variant="h3" className="my-5">
-          {t(skillSection.title)}
+          {t(skills.title)}
         </Heading>
         <TagGrid tags={skillList}></TagGrid>
       </section>
