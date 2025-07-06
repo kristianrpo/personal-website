@@ -4,23 +4,17 @@ import { getTranslations } from "next-intl/server";
 export default async function Home() {
   const t = await getTranslations("HomePage");
 
-  const title = t("hero.title");
-  const description = t("hero.subtitle");
-  const downloadCV = t("hero.downloadCV");
-  const contactMe = t("hero.contactMe");
-  const imageAlt = t("hero.imageAlt");
-
   return (
     <div className="">
       <Hero
-        title={title}
-        description={description}
+        title={t("hero.title")}
+        description={t("hero.subtitle")}
         urlButton1="./"
-        labelButton1={downloadCV}
+        labelButton1={t("hero.downloadCV")}
         urlButton2="./"
-        labelButton2={contactMe}
+        labelButton2={t("hero.contactMe")}
         imageSrc="/kristian.jpg"
-        imageAlt={imageAlt}
+        imageAlt={t("hero.imageAlt")}
       />
     </div>
   );
