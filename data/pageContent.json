@@ -1,0 +1,48 @@
+{
+  "homePage": {
+    "metadata": {
+      "title": "metadata.title",
+      "description": "metadata.description"
+    },
+    "hero": {
+      "title": "hero.title",
+      "subtitle": "hero.subtitle",
+      "downloadCV": "hero.downloadCV",
+      "contactMe": "hero.contactMe",
+      "imageAlt": "hero.imageAlt",
+      "imageSrc": "/kristian.jpg",
+      "contactMeUrl": "./",
+      "downloadCVUrl": "./"
+    },
+    "profile": {
+      "title": "profile.title",
+      "description": "profile.description"
+    },
+    "skills": {
+      "title": "skills.title",
+      "items": [
+        { "label": "skills.python", "variant": "primary" },
+        { "label": "skills.php", "variant": "primary" },
+        { "label": "skills.javascript", "variant": "primary" },
+        { "label": "skills.typescript", "variant": "primary" },
+        { "label": "skills.frontend", "variant": "primary" },
+        { "label": "skills.git", "variant": "primary" },
+        { "label": "skills.github", "variant": "primary" },
+        { "label": "skills.azure", "variant": "primary" },
+        { "label": "skills.mysql", "variant": "primary" },
+        { "label": "skills.django", "variant": "primary" },
+        { "label": "skills.laravel", "variant": "primary" },
+        { "label": "skills.nextjs", "variant": "primary" },
+        { "label": "skills.n8n", "variant": "primary" },
+        { "label": "skills.powerAutomate", "variant": "primary" },
+        { "label": "skills.docker", "variant": "primary" },
+        { "label": "skills.teamwork", "variant": "secondary" },
+        { "label": "skills.leadership", "variant": "secondary" },
+        { "label": "skills.communication", "variant": "secondary" },
+        { "label": "skills.continuousLearning", "variant": "secondary" },
+        { "label": "skills.problemSolving", "variant": "secondary" },
+        { "label": "skills.adaptability", "variant": "secondary" }
+      ]
+    }
+  }
+}
