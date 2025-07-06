@@ -1,0 +1,15 @@
+{
+  "HomePage": {
+    "metadata": {
+      "title": "Kristian's Portfolio",
+      "description": "Personal portfolio of Kristian, a web developer with experience in Next.js, React, and TypeScript.  "
+    },
+    "hero": {
+      "title": "Kristian Restrepo Osorio  ",
+      "subtitle": "Systems Engineer | Web Developer | RPA | Python | JavaScript | PHP | TypeScript | Django | Next.js | Laravel",
+      "downloadCV": "Download CV",
+      "contactMe": "Contact Me",
+      "imageAlt": "Image of Kristian Restrepo Osorio"
+    }
+  }
+}
