@@ -14,6 +14,30 @@
     "profile": {
       "title": "Perfil",
       "description": "Soy estudiante de Ingeniería de Sistemas en la Universidad EAFIT, apasionado por la programación, la automatización y el desarrollo web. Me enfoco en crear soluciones eficientes y escalables utilizando lenguajes como Python, JavaScript y PHP, junto con frameworks como Django, Laravel y Next.js. He desarrollado habilidades en liderazgo, trabajo en equipo y comunicación a través de mi experiencia como monitor académico y líder de grupos estudiantiles. Tengo experiencia en la gestión de trabajo colaborativo mediante plataformas como GitHub y Azure, además de metodologías ágiles como Scrum. Estoy comprometido con el aprendizaje continuo y la exploración de nuevas tecnologías en el desarrollo de software."
+    },
+    "skills": {
+      "title": "Habilidades & Competencias",
+      "python": "Python",
+      "php": "PHP",
+      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "frontend": "HTML & CSS",
+      "git": "Git",
+      "github": "GitHub",
+      "azure": "Azure",
+      "mysql": "MySQL",
+      "django": "Django",
+      "laravel": "Laravel",
+      "nextjs": "Next.js",
+      "n8n": "n8n",
+      "powerAutomate": "Power Automate",
+      "docker": "Docker",
+      "teamwork": "Trabajo en equipo",
+      "leadership": "Liderazgo",
+      "communication": "Comunicación efectiva",
+      "continuousLearning": "Aprendizaje continuo",
+      "problemSolving": "Resolución de problemas",
+      "adaptability": "Adaptabilidad"
     }
   }
 }
