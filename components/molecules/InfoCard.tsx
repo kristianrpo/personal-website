@@ -22,12 +22,10 @@ export default function ProfileInfoCard({
 }: InfoCard): JSX.Element {
   return (
     <div>
-      <Heading variant="h1" className="w-70 sm:w-100 md:w-120 lg:w-150">
+      <Heading variant="h1" className="w-full lg:w-150">
         {title}
       </Heading>
-      <Description className="w-70 my-4 sm:w-100 md:w-100 lg:w-120">
-        {description}
-      </Description>
+      <Description className="w-full my-4 lg:w-120">{description}</Description>
       <div className="flex justify-start gap-4 pt-2 w-fit">
         <ButtonLink
           href={urlButton1}

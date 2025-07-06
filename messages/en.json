@@ -10,6 +10,10 @@
       "downloadCV": "Download CV",
       "contactMe": "Contact Me",
       "imageAlt": "Image of Kristian Restrepo Osorio"
+    },
+    "profile": {
+      "title": "Profile",
+      "description": "I am a Systems Engineering student at EAFIT University, passionate about programming, automation, and web development. I focus on creating efficient and scalable solutions using languages like Python, JavaScript, and PHP, along with frameworks like Django, Laravel, and Next.js. I have developed skills in leadership, teamwork, and communication through my experience as an academic monitor and leader of student groups. I have experience in managing collaborative work using platforms like GitHub and Azure, as well as agile methodologies like Scrum. I am committed to continuous learning and exploring new technologies in software development."
     }
   }
 }

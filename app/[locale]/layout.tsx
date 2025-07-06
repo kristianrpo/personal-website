@@ -1,12 +1,11 @@
-import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
-import "@/styles/globals.css";
+import { JSX } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { JSX } from "react";
+import { notFound } from "next/navigation";
+import { Space_Grotesk } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import { Locale } from "@/i18n/routing";
-import { notFound } from "next/navigation";
+import "@/styles/globals.css";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
