@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Space_Grotesk } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import { Locale } from "@/i18n/routing";
+import CursorBlob from "@/components/utils/CursorBlob";
 import "@/styles/globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -35,6 +36,7 @@ export default async function LocaleLayout({
       >
         <NextIntlClientProvider messages={messages}>
           {children}
+          <CursorBlob />
         </NextIntlClientProvider>
       </body>
     </html>
