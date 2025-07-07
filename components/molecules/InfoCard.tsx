@@ -1,45 +1,31 @@
-import { JSX } from "react";
-import ButtonLink from "@/components/atoms/ButtonLink";
+import React, { JSX } from "react";
 import Description from "@/components/atoms/Description";
 import Heading from "@/components/atoms/Heading";
 
+type VariantHeading = React.ComponentProps<typeof Heading>["variant"];
 interface InfoCard {
   title: string;
   description: string;
-  labelButton1: string;
-  urlButton1: string;
-  labelButton2: string;
-  urlButton2: string;
+  variantHeading: VariantHeading;
+  classNameInfoCard?: string;
+  classNameHeading?: string;
+  classNameDescription?: string;
 }
 
-export default function ProfileInfoCard({
+export default function InfoCard({
   title,
   description,
-  urlButton1,
-  labelButton1,
-  urlButton2,
-  labelButton2,
+  variantHeading,
+  classNameInfoCard,
+  classNameHeading,
+  classNameDescription,
 }: InfoCard): JSX.Element {
   return (
-    <div>
-      <Heading variant="h1" className="w-full lg:w-150">
+    <div className={`${classNameInfoCard}`}>
+      <Heading variant={variantHeading} className={classNameHeading}>
         {title}
       </Heading>
-      <Description className="w-full my-4 lg:w-120">{description}</Description>
-      <div className="flex justify-start gap-4 pt-2 w-fit">
-        <ButtonLink
-          href={urlButton1}
-          className="bg-[#1463B8] hover:bg-white hover:text-[#1463B8]"
-        >
-          {labelButton1}
-        </ButtonLink>
-        <ButtonLink
-          href={urlButton2}
-          className="bg-[#1463B8] hover:bg-white hover:text-[#1463B8]"
-        >
-          {labelButton2}
-        </ButtonLink>
-      </div>
+      <Description className={classNameDescription}>{description}</Description>
     </div>
   );
 }

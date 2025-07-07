@@ -1,6 +1,7 @@
 import type { JSX } from "react";
-import ProfileInfoCard from "@/components/molecules/InfoCard";
+import InfoCard from "@/components/molecules/InfoCard";
 import CustomImage from "@/components/atoms/CustomImage";
+import ButtonLink from "@/components/atoms/ButtonLink";
 
 export interface HeroProps {
   title: string;
@@ -25,15 +26,28 @@ export default function Hero({
 }: HeroProps): JSX.Element {
   return (
     <section className="flex flex-col xl:flex-row gap-8 items-stretch rounded-2xl overflow-hidden bg-gradient-to-bl from-[#1C1C1C] to-[#293038] my-5">
-      <div className="flex-1 p-8 sm:p-10 md:p-20 flex items-center">
-        <ProfileInfoCard
+      <div className="flex-1 p-8 sm:p-10 md:p-20 flex flex-col justify-center items-start">
+        <InfoCard
           title={title}
           description={description}
-          urlButton1={urlButton1}
-          labelButton1={labelButton1}
-          urlButton2={urlButton2}
-          labelButton2={labelButton2}
+          variantHeading="h1"
+          classNameHeading="w-full lg:w-150"
+          classNameDescription="w-full my-4 lg:w-120"
         />
+        <div className="flex gap-4">
+          <ButtonLink
+            href={urlButton1}
+            className="bg-[#1463B8] hover:bg-white hover:text-[#1463B8]"
+          >
+            {labelButton1}
+          </ButtonLink>
+          <ButtonLink
+            href={urlButton2}
+            className="bg-[#1463B8] hover:bg-white hover:text-[#1463B8]"
+          >
+            {labelButton2}
+          </ButtonLink>
+        </div>
       </div>
 
       <div className="flex-1 relative min-h-[320px] md:max-h-[850px]">

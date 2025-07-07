@@ -38,6 +38,23 @@
       "continuousLearning": "Aprendizaje continuo",
       "problemSolving": "Resolución de problemas",
       "adaptability": "Adaptabilidad"
+    },
+    "experience": {
+      "title": "Experiencia",
+      "magneto": {
+        "title": "Desarrollador de Software",
+        "subtitle": "Magneto | Ene 2024 - Mar 2024",
+        "description": "Diseñé e implementé interfaces y landing pages con Next.js, integrando APIs backend y optimizando el SEO técnico. Configuré arquitecturas con Django, conectando bases de datos como Neo4j y PostgreSQL, automatizando procesos y aplicando buenas prácticas de documentación y análisis de código. Además, colaboré en equipo bajo metodologías ágiles (SCRUM) y participé en procesos de innovación usando design thinking para generar propuestas de valor centradas en el usuario.",
+        "labelButton": "Detallar",
+        "imageAlt": "Imagen de Magneto"
+      },
+      "eafit": {
+        "title": "Monitor Académico Pensamiento Computacional",
+        "subtitle": "EAFIT | Ene 2023 - Jun 2023",
+        "description": "Como tutor del curso de Pensamiento Computacional, brindé apoyo a estudiantes de primer semestre en el aprendizaje de Python, ofreciendo tutorías personalizadas y desarrollando estrategias para mejorar su comprensión. Fomenté el interés por la programación en estudiantes de diversas disciplinas, motivándolos a explorar soluciones innovadoras desde una perspectiva tecnológica.",
+        "labelButton": "Detallar",
+        "imageAlt": "Imagen de EAFIT"
+      }
     }
   }
 }
