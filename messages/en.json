@@ -55,6 +55,18 @@
         "labelButton": "Detail",
         "imageAlt": "Image of EAFIT"
       }
+    },
+
+    "studies": {
+      "title": "Studies",
+      "eafit": {
+        "title": "Systems Engineering",
+        "subtitle": "EAFIT University | 2022 - Present | GPA: 4.72"
+      },
+      "sena": {
+        "title": "Systems Technician",
+        "subtitle": "SENA | 2020 - 2021 | GPA: 4.5"
+      }
     }
   }
 }

@@ -66,6 +66,19 @@
           "imageAlt": "experience.eafit.imageAlt"
         }
       ]
+    },
+    "studies": {
+      "title": "studies.title",
+      "items": [
+        {
+          "title": "studies.eafit.title",
+          "subtitle": "studies.eafit.subtitle"
+        },
+        {
+          "title": "studies.sena.title",
+          "subtitle": "studies.sena.subtitle"
+        }
+      ]
     }
   }
 }
