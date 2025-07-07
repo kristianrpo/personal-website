@@ -10,9 +10,7 @@ export default function Description({
   className,
 }: DescriptionProps): JSX.Element {
   return (
-    <p
-      className={`text-base md:text-lg text-zinc-300 leading-relaxed ${className}`}
-    >
+    <p className={`text-base md:text-lg leading-relaxed ${className}`}>
       {children}
     </p>
   );
