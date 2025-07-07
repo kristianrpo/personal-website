@@ -79,6 +79,15 @@
           "subtitle": "studies.sena.subtitle"
         }
       ]
+    },
+    "languages": {
+      "title": "languages.title",
+      "items": [
+        {
+          "title": "languages.english.title",
+          "subtitle": "languages.english.subtitle"
+        }
+      ]
     }
   }
 }
