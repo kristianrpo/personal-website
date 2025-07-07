@@ -23,6 +23,7 @@ export default async function Home() {
   })) as Tag[];
 
   const experience = data.homePage.experience;
+  const studies = data.homePage.studies;
 
   return (
     <div className="">
@@ -72,6 +73,23 @@ export default async function Home() {
             urlButton={item.urlButton}
             imageSrc={item.imageSrc}
             imageAlt={t(item.imageAlt)}
+          />
+        ))}
+      </section>
+
+      <section id="studies" className="my-10">
+        <Heading variant="h3" className="my-5">
+          {t(studies.title)}
+        </Heading>
+        {studies.items.map((item, index) => (
+          <InfoCard
+            key={index}
+            title={t(item.title)}
+            description={t(item.subtitle)}
+            variantHeading="h4"
+            classNameInfoCard="mb-10"
+            classNameHeading="w-full"
+            classNameDescription="w-full my-2 text-[#9EABB8]"
           />
         ))}
       </section>

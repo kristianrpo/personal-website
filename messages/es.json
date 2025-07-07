@@ -55,6 +55,17 @@
         "labelButton": "Detallar",
         "imageAlt": "Imagen de EAFIT"
       }
+    },
+    "studies": {
+      "title": "Estudios",
+      "eafit": {
+        "title": "Ingeniería de Sistemas",
+        "subtitle": "Universidad EAFIT | 2022 - Presente | GPA: 4.72"
+      },
+      "sena": {
+        "title": "Técnico en Sistemas",
+        "subtitle": "SENA | 2020 - 2021 | GPA: 4.5"
+      }
     }
   }
 }
