@@ -43,6 +43,29 @@
         { "label": "skills.problemSolving", "variant": "secondary" },
         { "label": "skills.adaptability", "variant": "secondary" }
       ]
+    },
+    "experience": {
+      "title": "experience.title",
+      "items": [
+        {
+          "title": "experience.magneto.title",
+          "subtitle": "experience.magneto.subtitle",
+          "description": "experience.magneto.description",
+          "labelButton": "experience.magneto.labelButton",
+          "urlButton": "./",
+          "imageSrc": "/magneto.jpg",
+          "imageAlt": "experience.magneto.imageAlt"
+        },
+        {
+          "title": "experience.eafit.title",
+          "subtitle": "experience.eafit.subtitle",
+          "description": "experience.eafit.description",
+          "labelButton": "experience.eafit.labelButton",
+          "urlButton": "./",
+          "imageSrc": "/eafit.png",
+          "imageAlt": "experience.eafit.imageAlt"
+        }
+      ]
     }
   }
 }
