@@ -1,10 +1,11 @@
 import Hero from "@/components/organisms/Hero";
 import { getTranslations } from "next-intl/server";
 import Heading from "@/components/atoms/Heading";
-import Description from "@/components/atoms/Description";
 import TagGrid from "@/components/molecules/TagGrid";
 import Tag from "@/components/atoms/Tag";
 import data from "@/data/pageContent.json";
+import InfoCard from "../molecules/InfoCard";
+import SideImageCard from "../organisms/SideImageCard";
 
 type Tag = React.ComponentProps<typeof Tag>;
 
@@ -20,6 +21,8 @@ export default async function Home() {
     label: t(item.label),
     variant: item.variant,
   })) as Tag[];
+
+  const experience = data.homePage.experience;
 
   return (
     <div className="">
@@ -37,17 +40,40 @@ export default async function Home() {
       </section>
 
       <section id="profile" className="my-10">
-        <Heading variant="h3" className="my-5">
-          {t(profile.title)}
-        </Heading>
-        <Description>{t(profile.description)}</Description>
+        <InfoCard
+          title={t(profile.title)}
+          description={t(profile.description)}
+          variantHeading="h3"
+          classNameHeading="my-5"
+          classNameDescription="text-zinc-300"
+        />
       </section>
 
       <section id="skills" className="my-10">
         <Heading variant="h3" className="my-5">
           {t(skills.title)}
         </Heading>
-        <TagGrid tags={skillList}></TagGrid>
+
+        <TagGrid tags={skillList} />
+      </section>
+
+      <section id="experience" className="my-10">
+        <Heading variant="h3" className="my-5">
+          {t(experience.title)}
+        </Heading>
+
+        {experience.items.map((item, index) => (
+          <SideImageCard
+            key={index}
+            title={t(item.title)}
+            subtitle={t(item.subtitle)}
+            description={item.description ? t(item.description) : undefined}
+            labelButton={t(item.labelButton)}
+            urlButton={item.urlButton}
+            imageSrc={item.imageSrc}
+            imageAlt={t(item.imageAlt)}
+          />
+        ))}
       </section>
     </div>
   );
