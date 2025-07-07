@@ -56,7 +56,6 @@
         "imageAlt": "Image of EAFIT"
       }
     },
-
     "studies": {
       "title": "Studies",
       "eafit": {
@@ -66,6 +65,13 @@
       "sena": {
         "title": "Systems Technician",
         "subtitle": "SENA | 2020 - 2021 | GPA: 4.5"
+      }
+    },
+    "languages": {
+      "title": "Languages",
+      "english": {
+        "title": "English B2+",
+        "subtitle": "APTIS GENERAL | 2025"
       }
     }
   }

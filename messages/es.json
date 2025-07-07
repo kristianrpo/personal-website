@@ -66,6 +66,13 @@
         "title": "Técnico en Sistemas",
         "subtitle": "SENA | 2020 - 2021 | GPA: 4.5"
       }
+    },
+    "languages": {
+      "title": "Idiomas",
+      "english": {
+        "title": "Inglés B2+",
+        "subtitle": "APTIS GENERAL | 2025"
+      }
     }
   }
 }
