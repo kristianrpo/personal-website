@@ -97,6 +97,30 @@
         "imageAlt": "Imagen de Automatización de Grupos de Empleabilidad",
         "url": "https://automation.com"
       }
+    },
+    "extracurricularActivities": {
+      "title": "Actividades Extracurriculares",
+      "sabaneta": {
+        "title": "Auxiliar Operativo",
+        "subtitle": "Centro de Ciencia, Tecnología e Innovación de Sabaneta | Jun 2023 - Actual",
+        "description": "Apoyé en semilleros de desarrollo web, robótica, IA y videojuegos, asistiendo a profesores y estudiantes en actividades tecnológicas y bootcamps del CTEI. Colaboré en la gestión de informes y control de asistencia. Además, desarrollo proyectos de IoT desplegados en un servidor on-premise en el CTEI.",
+        "labelButton": "Detallar",
+        "imageAlt": "Imagen de sabaneta"
+      },
+      "oe": {
+        "title": "Director Financiero",
+        "subtitle": "Organización Estudiantil EAFIT | Ene 2023 - Dic 2023",
+        "description": "Lideré la elaboración del presupuesto anual y gestioné eficientemente los recursos financieros. Negocié con proveedores y manejé procesos de facturación para eventos. Organicé el primer evento de maratón de programación del comité y apoyé en eventos estudiantiles como Inventiva y DIAS EAFIT.",
+        "labelButton": "Detallar",
+        "imageAlt": "Imagen de Organizacion Estudiantil EAFIT"
+      },
+      "nova": {
+        "title": "Miembro activo",
+        "subtitle": "Nova EAFIT | Jul 2024 - Ene 2025",
+        "description": "Apoyé en eventos relacionados con la tecnología y la innovación para la universidad EAFIT.",
+        "labelButton": "Detallar",
+        "imageAlt": "Imagen de NOVA"
+      }
     }
   }
 }

@@ -21,6 +21,7 @@ export default async function Home() {
   const studies = data.homePage.studies;
   const languages = data.homePage.languages;
   const projects = data.homePage.projects;
+  const extracurricularActivities = data.homePage.extracurricularActivities;
 
   return (
     <div className="">
@@ -133,6 +134,26 @@ export default async function Home() {
             />
           ))}
         </div>
+      </section>
+
+      <section id="extracurricular-activities" className="my-10">
+        <Heading variant="h3" className="my-5">
+          {t(extracurricularActivities.title)}
+        </Heading>
+
+        {extracurricularActivities.items.map((item, index) => (
+          <div className="mb-10" key={index}>
+            <SideImageCard
+              title={t(item.title)}
+              subtitle={t(item.subtitle)}
+              description={item.description ? t(item.description) : undefined}
+              labelButton={t(item.labelButton)}
+              urlButton={item.urlButton}
+              imageSrc={item.imageSrc}
+              imageAlt={t(item.imageAlt)}
+            />
+          </div>
+        ))}
       </section>
     </div>
   );
