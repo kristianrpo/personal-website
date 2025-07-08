@@ -146,6 +146,26 @@
           "imageAlt": "extracurricularActivities.nova.imageAlt"
         }
       ]
+    },
+    "courses": {
+      "title": "courses.title",
+      "items": [
+        {
+          "title": "courses.js.title",
+          "subtitle": "courses.js.subtitle",
+          "url": "./"
+        },
+        {
+          "title": "courses.git.title",
+          "subtitle": "courses.git.subtitle",
+          "url": "./"
+        },
+        {
+          "title": "courses.softSkills.title",
+          "subtitle": "courses.softSkills.subtitle",
+          "url": "./"
+        }
+      ]
     }
   }
 }

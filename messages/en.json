@@ -98,6 +98,21 @@
         "url": "https://automation.com"
       }
     },
+    "courses": {
+      "title": "Courses",
+      "js": {
+        "title": "JavaScript Career for Frontend",
+        "subtitle": "Platzi | 2024"
+      },
+      "git": {
+        "title": "Professional Git and GitHub Course",
+        "subtitle": "Platzi | 2024"
+      },
+      "softSkills": {
+        "title": "Soft Skills Course for Professional Development",
+        "subtitle": "Platzi | 2024"
+      }
+    },
     "extracurricularActivities": {
       "title": "Extracurricular Activities",
       "sabaneta": {
