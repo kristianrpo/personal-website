@@ -73,6 +73,30 @@
         "title": "English B2+",
         "subtitle": "APTIS GENERAL | 2025"
       }
+    },
+    "projects": {
+      "title": "Projects",
+      "tiktrack": {
+        "title": "TikTrack",
+        "description": "TikTrack is a web application that connects companies with the perfect TikTok influencer in Colombia, sorted by location.",
+        "imageSrc": "/tiktrack.png",
+        "imageAlt": "Image of TikTrack",
+        "url": "https://tiktrack.com"
+      },
+      "tonali": {
+        "title": "Tonali",
+        "description": "Tonalí is an e-commerce platform for beauty products. It features standard shopping functionalities and a unique recommendation system based on colorimetry.",
+        "imageSrc": "/tonali.png",
+        "imageAlt": "Image of Tonali",
+        "url": "https://tonali.com"
+      },
+      "automation": {
+        "title": "Automation of Employment Groups",
+        "description": "Automatic sending of messages to employment groups based on location for Magneto.",
+        "imageSrc": "/automation.png",
+        "imageAlt": "Image of Automation of Employment Groups",
+        "url": "https://automation.com"
+      }
     }
   }
 }

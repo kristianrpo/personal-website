@@ -88,6 +88,32 @@
           "subtitle": "languages.english.subtitle"
         }
       ]
+    },
+    "projects": {
+      "title": "projects.title",
+      "items": [
+        {
+          "title": "projects.tiktrack.title",
+          "description": "projects.tiktrack.description",
+          "imageSrc": "/tiktrack.png",
+          "imageAlt": "projects.tiktrack.imageAlt",
+          "url": "https://tiktrack.onrender.com"
+        },
+        {
+          "title": "projects.tonali.title",
+          "description": "projects.tonali.description",
+          "imageSrc": "/tonali.png",
+          "imageAlt": "projects.tonali.imageAlt",
+          "url": "https://tonali.onrender.com"
+        },
+        {
+          "title": "projects.automation.title",
+          "description": "projects.automation.description",
+          "imageSrc": "/automation.png",
+          "imageAlt": "projects.automation.imageAlt",
+          "url": "https://github.com/kristianrpo/automation-employability-groups"
+        }
+      ]
     }
   }
 }
