@@ -97,6 +97,30 @@
         "imageAlt": "Image of Automation of Employment Groups",
         "url": "https://automation.com"
       }
+    },
+    "extracurricularActivities": {
+      "title": "Extracurricular Activities",
+      "sabaneta": {
+        "title": "Operational Assistant",
+        "subtitle": "Sabaneta Science, Technology and Innovation Center | Jun 2023 - Present",
+        "description": "I supported web development, robotics, AI, and video game seedbeds, assisting teachers and students in technological activities and CTEI bootcamps. I collaborated in report management and attendance control. In addition, I developed IoT projects deployed on an on-premise server at CTEI.",
+        "labelButton": "Detail",
+        "imageAlt": "Image of Sabaneta"
+      },
+      "oe": {
+        "title": "Financial Director",
+        "subtitle": "EAFIT Student Organization | Jan 2023 - Dec 2023",
+        "description": "I led the preparation of the annual budget and efficiently managed financial resources. I negotiated with suppliers and handled billing processes for events. I organized the first programming marathon event for the committee and supported student events such as Inventiva and DIAS EAFIT.",
+        "labelButton": "Detail",
+        "imageAlt": "Image of EAFIT Student Organization"
+      },
+      "nova": {
+        "title": "Active Member",
+        "subtitle": "Nova EAFIT | Jul 2024 - Jan 2025",
+        "description": "I supported events related to technology and innovation for EAFIT University.",
+        "labelButton": "Detail",
+        "imageAlt": "Image of NOVA"
+      }
     }
   }
 }
