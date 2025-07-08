@@ -1,14 +1,13 @@
 import { getTranslations } from "next-intl/server";
 import Hero from "@/components/organisms/Hero";
 import Heading from "@/components/atoms/Heading";
-import TagGrid from "@/components/molecules/TagGrid";
 import Tag from "@/components/atoms/Tag";
 import InfoCard from "@/components/molecules/InfoCard";
 import SideImageCard from "@/components/organisms/SideImageCard";
 import TopImageCard from "@/components/organisms/TopImageCard";
 import data from "@/data/pageContent.json";
 
-type Tag = React.ComponentProps<typeof Tag>;
+type Variant = React.ComponentProps<typeof Tag>["variant"];
 
 export default async function Home() {
   const t = await getTranslations("HomePage");
@@ -18,11 +17,6 @@ export default async function Home() {
   const profile = data.homePage.profile;
 
   const skills = data.homePage.skills;
-  const skillList = skills.items.map((item) => ({
-    label: t(item.label),
-    variant: item.variant,
-  })) as Tag[];
-
   const experience = data.homePage.experience;
   const studies = data.homePage.studies;
   const languages = data.homePage.languages;
@@ -58,7 +52,15 @@ export default async function Home() {
           {t(skills.title)}
         </Heading>
 
-        <TagGrid tags={skillList} />
+        <div className="flex flex-wrap gap-3">
+          {skills.items.map((skill, key) => (
+            <Tag
+              key={key}
+              label={t(skill.label)}
+              variant={skill.variant as Variant}
+            />
+          ))}
+        </div>
       </section>
 
       <section id="experience" className="my-10">
@@ -67,16 +69,17 @@ export default async function Home() {
         </Heading>
 
         {experience.items.map((item, index) => (
-          <SideImageCard
-            key={index}
-            title={t(item.title)}
-            subtitle={t(item.subtitle)}
-            description={item.description ? t(item.description) : undefined}
-            labelButton={t(item.labelButton)}
-            urlButton={item.urlButton}
-            imageSrc={item.imageSrc}
-            imageAlt={t(item.imageAlt)}
-          />
+          <div className="mb-10" key={index}>
+            <SideImageCard
+              title={t(item.title)}
+              subtitle={t(item.subtitle)}
+              description={item.description ? t(item.description) : undefined}
+              labelButton={t(item.labelButton)}
+              urlButton={item.urlButton}
+              imageSrc={item.imageSrc}
+              imageAlt={t(item.imageAlt)}
+            />
+          </div>
         ))}
       </section>
 
@@ -102,16 +105,15 @@ export default async function Home() {
           {t(languages.title)}
         </Heading>
         {languages.items.map((item, index) => (
-          <div className="my-10" key={index}>
-            <InfoCard
-              title={t(item.title)}
-              description={t(item.subtitle)}
-              variantHeading="h4"
-              classNameInfoCard="mb-10"
-              classNameHeading="w-full"
-              classNameDescription="w-full my-2 text-[#9EABB8]"
-            />
-          </div>
+          <InfoCard
+            key={index}
+            title={t(item.title)}
+            description={t(item.subtitle)}
+            variantHeading="h4"
+            classNameInfoCard="mb-10"
+            classNameHeading="w-full"
+            classNameDescription="w-full my-2 text-[#9EABB8]"
+          />
         ))}
       </section>
 
