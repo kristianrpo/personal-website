@@ -114,6 +114,38 @@
           "url": "https://github.com/kristianrpo/automation-employability-groups"
         }
       ]
+    },
+    "extracurricularActivities": {
+      "title": "extracurricularActivities.title",
+      "items": [
+        {
+          "title": "extracurricularActivities.sabaneta.title",
+          "subtitle": "extracurricularActivities.sabaneta.subtitle",
+          "description": "extracurricularActivities.sabaneta.description",
+          "labelButton": "extracurricularActivities.sabaneta.labelButton",
+          "urlButton": "./",
+          "imageSrc": "/sabaneta.jpg",
+          "imageAlt": "extracurricularActivities.sabaneta.imageAlt"
+        },
+        {
+          "title": "extracurricularActivities.oe.title",
+          "subtitle": "extracurricularActivities.oe.subtitle",
+          "description": "extracurricularActivities.oe.description",
+          "labelButton": "extracurricularActivities.oe.labelButton",
+          "urlButton": "./",
+          "imageSrc": "/eafit.png",
+          "imageAlt": "extracurricularActivities.oe.imageAlt"
+        },
+        {
+          "title": "extracurricularActivities.nova.title",
+          "subtitle": "extracurricularActivities.nova.subtitle",
+          "description": "extracurricularActivities.nova.description",
+          "labelButton": "extracurricularActivities.nova.labelButton",
+          "urlButton": "./",
+          "imageSrc": "/eafit.png",
+          "imageAlt": "extracurricularActivities.nova.imageAlt"
+        }
+      ]
     }
   }
 }
