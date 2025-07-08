@@ -73,6 +73,30 @@
         "title": "Inglés B2+",
         "subtitle": "APTIS GENERAL | 2025"
       }
+    },
+    "projects": {
+      "title": "Proyectos Destacados",
+      "tiktrack": {
+        "title": "TikTrack",
+        "description": "TikTrack es una aplicación web que conecta a las empresas con el influenciador perfecto de TikTok en Colombia, ordenado por ubicación.",
+        "imageSrc": "/tiktrack.png",
+        "imageAlt": "Imagen de TikTrack",
+        "url": "https://tiktrack.com"
+      },
+      "tonali": {
+        "title": "Tonali",
+        "description": "Tonalí es una plataforma de comercio electrónico de productos de belleza. Cuenta con funcionalidades de compra estándar y un sistema único de recomendación basado en la colorimetría.",
+        "imageSrc": "/tonali.png",
+        "imageAlt": "Imagen de Tonali",
+        "url": "https://tonali.com"
+      },
+      "automation": {
+        "title": "Automatización de Grupos de Empleabilidad",
+        "description": "Envío automático de mensajes a grupos de empleabilidad según la localidad para Magneto.",
+        "imageSrc": "/automation.png",
+        "imageAlt": "Imagen de Automatización de Grupos de Empleabilidad",
+        "url": "https://automation.com"
+      }
     }
   }
 }

@@ -24,7 +24,7 @@ export default function SideImageCard({
   imageAlt,
 }: SideImageCardProps): JSX.Element {
   return (
-    <section className="flex flex-col xl:flex-row gap-8 items-stretch rounded-2xl overflow-hidden my-10">
+    <div className="flex flex-col xl:flex-row gap-8 items-stretch rounded-2xl overflow-hidden">
       <div className="flex-2/3 flex flex-col items-start order-2">
         <InfoCard
           title={title}
@@ -52,6 +52,6 @@ export default function SideImageCard({
           className="object-cover max-h-[400px] rounded-xl"
         />
       </div>
-    </section>
+    </div>
   );
 }

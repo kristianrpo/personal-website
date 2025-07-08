@@ -6,34 +6,34 @@ export default function CursorBlob() {
   const blobRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-  const blob = blobRef.current;
-  if (!blob) return;
+    const blob = blobRef.current;
+    if (!blob) return;
 
-  blob.style.pointerEvents = "none";
+    blob.style.pointerEvents = "none";
 
-  let currentX = 0;
-  let currentY = 0;
-  let targetX = 0;
-  let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+    let targetX = 0;
+    let targetY = 0;
 
-  const speed = 0.2;
+    const speed = 0.2;
 
-  const handleMouseMove = (e: MouseEvent) => {
-    targetX = e.clientX;
-    targetY = e.clientY;
-  };
+    const handleMouseMove = (e: MouseEvent) => {
+      targetX = e.clientX;
+      targetY = e.clientY;
+    };
 
-  const animate = () => {
-    currentX += (targetX - currentX) * speed;
-    currentY += (targetY - currentY) * speed;
-    blob.style.transform = `translate3d(${currentX}px, ${currentY}px, 0)`;
-    requestAnimationFrame(animate);
-  };
+    const animate = () => {
+      currentX += (targetX - currentX) * speed;
+      currentY += (targetY - currentY) * speed;
+      blob.style.transform = `translate3d(${currentX}px, ${currentY}px, 0)`;
+      requestAnimationFrame(animate);
+    };
 
-  animate();
-  window.addEventListener("mousemove", handleMouseMove);
-  return () => window.removeEventListener("mousemove", handleMouseMove);
-}, []);
+    animate();
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
 
   return (
     <div
