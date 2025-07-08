@@ -21,7 +21,7 @@ export default function TopImageCard({
   return (
     <Link
       href={url}
-      className="flex flex-col gap-8 items-stretch rounded-2xl overflow-hidden bg-gradient-to-bl from-[#1C1C1C] to-[#293038]"
+      className="flex flex-col gap-8 items-stretch rounded-2xl overflow-hidden bg-gradient-to-bl from-[#1C1C1C] to-[#293038] transition-transform duration-300 hover:scale-105"
     >
       <div className="flex-2/3 flex flex-col items-start order-2">
         <InfoCard
