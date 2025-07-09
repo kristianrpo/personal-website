@@ -6,6 +6,7 @@ import { Space_Grotesk } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import { Locale } from "@/i18n/routing";
 import CursorBlob from "@/components/utils/CursorBlob";
+import NavBar from "@/components/molecules/NavBar";
 import "@/styles/globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -35,6 +36,7 @@ export default async function LocaleLayout({
         className={`${spaceGrotesk.className} antialiased mx-[20px] sm:mx-[40px] md:mx-[60px] lg:mx-[80px] xl:mx-[100px] 2xl:mx-[150px] bg-[#111214] text-zinc-200`}
       >
         <NextIntlClientProvider messages={messages}>
+          <NavBar />
           {children}
           <CursorBlob />
         </NextIntlClientProvider>

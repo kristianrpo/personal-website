@@ -1,5 +1,5 @@
 import type { JSX } from "react";
-import InfoCard from "@/components/molecules/InfoCard";
+import InfoCard from "@/components/molecules/cards/InfoCard";
 import CustomImage from "@/components/atoms/CustomImage";
 import Link from "next/link";
 

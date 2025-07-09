@@ -2,11 +2,11 @@ import { getTranslations } from "next-intl/server";
 import Hero from "@/components/organisms/Hero";
 import Heading from "@/components/atoms/Heading";
 import Tag from "@/components/atoms/Tag";
-import InfoCard from "@/components/molecules/InfoCard";
-import SideImageCard from "@/components/organisms/SideImageCard";
-import TopImageCard from "@/components/organisms/TopImageCard";
+import InfoCard from "@/components/molecules/cards/InfoCard";
+import SideImageCard from "@/components/organisms/cards/SideImageCard";
+import TopImageCard from "@/components/organisms/cards/TopImageCard";
 import data from "@/data/pageContent.json";
-import InfoCardLink from "@/components/molecules/InfoCardLink";
+import InfoCardLink from "@/components/molecules/cards/InfoCardLink";
 
 type Variant = React.ComponentProps<typeof Tag>["variant"];
 
@@ -14,9 +14,7 @@ export default async function Home() {
   const t = await getTranslations("HomePage");
 
   const hero = data.homePage.hero;
-
   const profile = data.homePage.profile;
-
   const skills = data.homePage.skills;
   const experience = data.homePage.experience;
   const studies = data.homePage.studies;

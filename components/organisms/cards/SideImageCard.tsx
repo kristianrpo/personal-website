@@ -1,7 +1,7 @@
 import type { JSX } from "react";
-import InfoCard from "@/components/molecules/InfoCard";
+import InfoCard from "@/components/molecules/cards/InfoCard";
 import CustomImage from "@/components/atoms/CustomImage";
-import ButtonLink from "@/components/atoms/ButtonLink";
+import ButtonLinkCTA from "@/components/atoms/buttons/ButtonLinkCTA";
 import Description from "@/components/atoms/Description";
 
 export interface SideImageCardProps {
@@ -36,12 +36,12 @@ export default function SideImageCard({
         {description && (
           <Description className="my-2">{description}</Description>
         )}
-        <ButtonLink
+        <ButtonLinkCTA
           href={urlButton}
           className="bg-[#1463B8] hover:bg-white hover:text-[#1463B8] my-3"
         >
           {labelButton}
-        </ButtonLink>
+        </ButtonLinkCTA>
       </div>
       <div className="flex-1/3 max-h-[400px] order-1">
         <CustomImage
