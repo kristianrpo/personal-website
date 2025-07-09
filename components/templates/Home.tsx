@@ -2,10 +2,11 @@ import { getTranslations } from "next-intl/server";
 import Hero from "@/components/organisms/Hero";
 import Heading from "@/components/atoms/Heading";
 import Tag from "@/components/atoms/Tag";
-import InfoCard from "@/components/molecules/InfoCard";
-import SideImageCard from "@/components/organisms/SideImageCard";
-import TopImageCard from "@/components/organisms/TopImageCard";
+import InfoCard from "@/components/molecules/cards/InfoCard";
+import SideImageCard from "@/components/organisms/cards/SideImageCard";
+import TopImageCard from "@/components/organisms/cards/TopImageCard";
 import data from "@/data/pageContent.json";
+import InfoCardLink from "@/components/molecules/cards/InfoCardLink";
 
 type Variant = React.ComponentProps<typeof Tag>["variant"];
 
@@ -13,14 +14,13 @@ export default async function Home() {
   const t = await getTranslations("HomePage");
 
   const hero = data.homePage.hero;
-
   const profile = data.homePage.profile;
-
   const skills = data.homePage.skills;
   const experience = data.homePage.experience;
   const studies = data.homePage.studies;
   const languages = data.homePage.languages;
   const projects = data.homePage.projects;
+  const courses = data.homePage.courses;
   const extracurricularActivities = data.homePage.extracurricularActivities;
 
   return (
@@ -134,6 +134,24 @@ export default async function Home() {
             />
           ))}
         </div>
+      </section>
+
+      <section id="courses" className="my-10">
+        <Heading variant="h3" className="my-5">
+          {t(courses.title)}
+        </Heading>
+        {courses.items.map((item, index) => (
+          <InfoCardLink
+            key={index}
+            title={t(item.title)}
+            description={t(item.subtitle)}
+            url={item.url}
+            variantHeading="h4"
+            classNameInfoCard="mb-10"
+            classNameHeading="w-full"
+            classNameDescription="w-full my-2 text-[#9EABB8]"
+          />
+        ))}
       </section>
 
       <section id="extracurricular-activities" className="my-10">

@@ -1,4 +1,9 @@
 {
+  "Navbar": {
+    "githubUrl": "https://github.com/kristianrpo",
+    "linkedinUrl": "https://www.linkedin.com/in/kristian-restrepo-osorio"
+  },
+
   "homePage": {
     "metadata": {
       "title": "metadata.title",
@@ -10,9 +15,9 @@
       "downloadCV": "hero.downloadCV",
       "contactMe": "hero.contactMe",
       "imageAlt": "hero.imageAlt",
-      "imageSrc": "/kristian.jpg",
+      "imageSrc": "/images/kristian.jpg",
       "contactMeUrl": "./",
-      "downloadCVUrl": "./"
+      "downloadCVUrl": "/files/hv_spanish.pdf"
     },
     "profile": {
       "title": "profile.title",
@@ -52,8 +57,8 @@
           "subtitle": "experience.magneto.subtitle",
           "description": "experience.magneto.description",
           "labelButton": "experience.magneto.labelButton",
-          "urlButton": "./",
-          "imageSrc": "/magneto.jpg",
+          "urlButton": "https://www.linkedin.com/in/kristian-restrepo-osorio/overlay/1732573658494/single-media-viewer/?profileId=ACoAAEjZFioBUSM6oWfQvol81iDEpHQ4hTCV1IM",
+          "imageSrc": "/images/magneto.jpg",
           "imageAlt": "experience.magneto.imageAlt"
         },
         {
@@ -61,8 +66,8 @@
           "subtitle": "experience.eafit.subtitle",
           "description": "experience.eafit.description",
           "labelButton": "experience.eafit.labelButton",
-          "urlButton": "./",
-          "imageSrc": "/eafit.png",
+          "urlButton": "https://www.linkedin.com/in/kristian-restrepo-osorio/details/experience/",
+          "imageSrc": "/images/eafit.png",
           "imageAlt": "experience.eafit.imageAlt"
         }
       ]
@@ -95,21 +100,21 @@
         {
           "title": "projects.tiktrack.title",
           "description": "projects.tiktrack.description",
-          "imageSrc": "/tiktrack.png",
+          "imageSrc": "/images/tiktrack.png",
           "imageAlt": "projects.tiktrack.imageAlt",
           "url": "https://tiktrack.onrender.com"
         },
         {
           "title": "projects.tonali.title",
           "description": "projects.tonali.description",
-          "imageSrc": "/tonali.png",
+          "imageSrc": "/images/tonali.png",
           "imageAlt": "projects.tonali.imageAlt",
           "url": "https://tonali.onrender.com"
         },
         {
           "title": "projects.automation.title",
           "description": "projects.automation.description",
-          "imageSrc": "/automation.png",
+          "imageSrc": "/images/automation.png",
           "imageAlt": "projects.automation.imageAlt",
           "url": "https://github.com/kristianrpo/automation-employability-groups"
         }
@@ -123,8 +128,8 @@
           "subtitle": "extracurricularActivities.sabaneta.subtitle",
           "description": "extracurricularActivities.sabaneta.description",
           "labelButton": "extracurricularActivities.sabaneta.labelButton",
-          "urlButton": "./",
-          "imageSrc": "/sabaneta.jpg",
+          "urlButton": "https://www.linkedin.com/in/kristian-restrepo-osorio/details/volunteering-experiences/1732329188204/single-media-viewer/?profileId=ACoAAEjZFioBUSM6oWfQvol81iDEpHQ4hTCV1IM",
+          "imageSrc": "/images/sabaneta.jpg",
           "imageAlt": "extracurricularActivities.sabaneta.imageAlt"
         },
         {
@@ -132,8 +137,8 @@
           "subtitle": "extracurricularActivities.oe.subtitle",
           "description": "extracurricularActivities.oe.description",
           "labelButton": "extracurricularActivities.oe.labelButton",
-          "urlButton": "./",
-          "imageSrc": "/eafit.png",
+          "urlButton": "https://www.linkedin.com/in/kristian-restrepo-osorio/details/volunteering-experiences/1458419165/multiple-media-viewer/?profileId=ACoAAEjZFioBUSM6oWfQvol81iDEpHQ4hTCV1IM&treasuryMediaId=1732330239478",
+          "imageSrc": "/images/eafit.png",
           "imageAlt": "extracurricularActivities.oe.imageAlt"
         },
         {
@@ -141,9 +146,29 @@
           "subtitle": "extracurricularActivities.nova.subtitle",
           "description": "extracurricularActivities.nova.description",
           "labelButton": "extracurricularActivities.nova.labelButton",
-          "urlButton": "./",
-          "imageSrc": "/eafit.png",
+          "urlButton": "https://www.linkedin.com/in/kristian-restrepo-osorio/details/volunteering-experiences/",
+          "imageSrc": "/images/eafit.png",
           "imageAlt": "extracurricularActivities.nova.imageAlt"
+        }
+      ]
+    },
+    "courses": {
+      "title": "courses.title",
+      "items": [
+        {
+          "title": "courses.js.title",
+          "subtitle": "courses.js.subtitle",
+          "url": "https://platzi.com/p/kristianrpo/ruta/7041-web-javascript/diploma/detalle/"
+        },
+        {
+          "title": "courses.git.title",
+          "subtitle": "courses.git.subtitle",
+          "url": "https://platzi.com/p/kristianrpo/curso/1557-git-github/diploma/detalle/"
+        },
+        {
+          "title": "courses.softSkills.title",
+          "subtitle": "courses.softSkills.subtitle",
+          "url": "https://platzi.com/p/kristianrpo/curso/6570-habilidades-blandas/diploma/detalle/"
         }
       ]
     }

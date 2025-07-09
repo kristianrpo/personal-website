@@ -1,7 +1,7 @@
 import type { JSX } from "react";
-import InfoCard from "@/components/molecules/InfoCard";
+import InfoCard from "@/components/molecules/cards/InfoCard";
 import CustomImage from "@/components/atoms/CustomImage";
-import ButtonLink from "@/components/atoms/ButtonLink";
+import ButtonLinkCTA from "@/components/atoms/buttons/ButtonLinkCTA";
 
 export interface HeroProps {
   title: string;
@@ -35,18 +35,18 @@ export default function Hero({
           classNameDescription="w-full my-4 lg:w-120"
         />
         <div className="flex gap-4">
-          <ButtonLink
+          <ButtonLinkCTA
             href={urlButton1}
             className="bg-[#1463B8] hover:bg-white hover:text-[#1463B8]"
           >
             {labelButton1}
-          </ButtonLink>
-          <ButtonLink
+          </ButtonLinkCTA>
+          <ButtonLinkCTA
             href={urlButton2}
             className="bg-[#1463B8] hover:bg-white hover:text-[#1463B8]"
           >
             {labelButton2}
-          </ButtonLink>
+          </ButtonLinkCTA>
         </div>
       </div>
 

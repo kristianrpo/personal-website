@@ -1,17 +1,17 @@
 import type { JSX } from "react";
 import Link from "next/link";
 
-interface ButtonLinkProps {
+interface ButtonLinkCTAProps {
   children: React.ReactNode;
   href: string;
   className?: string;
 }
 
-export default function ButtonLink({
+export default function ButtonLinkCTA({
   children,
   href,
   className,
-}: ButtonLinkProps): JSX.Element {
+}: ButtonLinkCTAProps): JSX.Element {
   return (
     <Link
       href={href}
