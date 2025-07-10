@@ -136,6 +136,17 @@
         "labelButton": "Detail",
         "imageAlt": "Image of NOVA"
       }
+    },
+    "contactMe": {
+      "title": "Contact Form",
+      "labelButton": "Contact Me",
+      "labelName": "Your name",
+      "labelEmail": "Your email",
+      "labelMessage": "Your message",
+      "errorMessage": "Error sending message. Please try again.",
+      "successMessage": "Message sent successfully. I will contact you soon.",
+      "sendingLabelButton": "Sending...",
+      "sendLabelButton": "Send"
     }
   }
 }

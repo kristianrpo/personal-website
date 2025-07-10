@@ -5,7 +5,8 @@ import Tag from "@/components/atoms/Tag";
 import InfoCard from "@/components/molecules/cards/InfoCard";
 import SideImageCard from "@/components/organisms/cards/SideImageCard";
 import TopImageCard from "@/components/organisms/cards/TopImageCard";
-import data from "@/data/pageContent.json";
+import ContactForm from "@/components/organisms/ContactForm";
+import data from "@/data/page_content.json";
 import InfoCardLink from "@/components/molecules/cards/InfoCardLink";
 
 type Variant = React.ComponentProps<typeof Tag>["variant"];
@@ -22,6 +23,7 @@ export default async function Home() {
   const projects = data.homePage.projects;
   const courses = data.homePage.courses;
   const extracurricularActivities = data.homePage.extracurricularActivities;
+  const contactMe = data.homePage.contactMe;
 
   return (
     <div className="">
@@ -31,8 +33,6 @@ export default async function Home() {
           description={t(hero.subtitle)}
           urlButton1={hero.downloadCVUrl}
           labelButton1={t(hero.downloadCV)}
-          urlButton2={hero.contactMeUrl}
-          labelButton2={t(hero.contactMe)}
           imageSrc={hero.imageSrc}
           imageAlt={t(hero.imageAlt)}
         />
@@ -173,6 +173,17 @@ export default async function Home() {
           </div>
         ))}
       </section>
+      <ContactForm
+        title={t(contactMe.title)}
+        labelButton={t(contactMe.labelButton)}
+        labelName={t(contactMe.labelName)}
+        labelEmail={t(contactMe.labelEmail)}
+        labelMessage={t(contactMe.labelMessage)}
+        errorMessage={t(contactMe.errorMessage)}
+        successMessage={t(contactMe.successMessage)}
+        sendingLabelButton={t(contactMe.sendingLabelButton)}
+        sendLabelButton={t(contactMe.sendLabelButton)}
+      />
     </div>
   );
 }

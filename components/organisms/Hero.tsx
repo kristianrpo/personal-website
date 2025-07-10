@@ -8,8 +8,6 @@ export interface HeroProps {
   description: string;
   urlButton1: string;
   labelButton1: string;
-  urlButton2: string;
-  labelButton2: string;
   imageSrc: string;
   imageAlt: string;
 }
@@ -19,8 +17,6 @@ export default function Hero({
   description,
   urlButton1,
   labelButton1,
-  urlButton2,
-  labelButton2,
   imageSrc,
   imageAlt,
 }: HeroProps): JSX.Element {
@@ -40,12 +36,6 @@ export default function Hero({
             className="bg-[#1463B8] hover:bg-white hover:text-[#1463B8]"
           >
             {labelButton1}
-          </ButtonLinkCTA>
-          <ButtonLinkCTA
-            href={urlButton2}
-            className="bg-[#1463B8] hover:bg-white hover:text-[#1463B8]"
-          >
-            {labelButton2}
           </ButtonLinkCTA>
         </div>
       </div>

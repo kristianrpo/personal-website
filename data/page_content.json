@@ -171,6 +171,17 @@
           "url": "https://platzi.com/p/kristianrpo/curso/6570-habilidades-blandas/diploma/detalle/"
         }
       ]
+    },
+    "contactMe": {
+      "title": "contactMe.title",
+      "labelButton": "contactMe.labelButton",
+      "labelName": "contactMe.labelName",
+      "labelEmail": "contactMe.labelEmail",
+      "labelMessage": "contactMe.labelMessage",
+      "errorMessage": "contactMe.errorMessage",
+      "successMessage": "contactMe.successMessage",
+      "sendingLabelButton": "contactMe.sendingLabelButton",
+      "sendLabelButton": "contactMe.sendLabelButton"
     }
   }
 }
