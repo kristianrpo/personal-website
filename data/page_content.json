@@ -156,6 +156,11 @@
       "title": "courses.title",
       "items": [
         {
+          "title": "courses.scrum.title",
+          "subtitle": "courses.scrum.subtitle",
+          "url": "https://www.scrumstudy.com/certification/verify?type=SFC&number=1091840"
+        },
+        {
           "title": "courses.js.title",
           "subtitle": "courses.js.subtitle",
           "url": "https://platzi.com/p/kristianrpo/ruta/7041-web-javascript/diploma/detalle/"

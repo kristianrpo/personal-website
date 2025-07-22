@@ -100,6 +100,10 @@
     },
     "courses": {
       "title": "Certificados & Cursos",
+      "scrum": {
+        "title": "Fundamentos de Scrum",
+        "subtitle": "SCRUMstudy | 2025"
+      },
       "js": {
         "title": "Carrera JavaScript para Frontend",
         "subtitle": "Platzi | 2024"
